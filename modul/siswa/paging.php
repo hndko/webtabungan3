@@ -111,7 +111,8 @@ foreach ($data_siswa as $key) :
                 <div class="row mb-3">
                   <label for="kelas" class="col-sm-3 col-form-label">Kelas</label>
                   <div class="col-sm-9">
-                    <select name="kelas" id="kelas" class="form-select">
+                    <input type="text" class="form-control" name="kelas" id="kelas" placeholder="Masukkan Kelas" autocomplete="off" value="<?= $key['kelas']; ?>">
+                    <!-- <select name="kelas" id="kelas" class="form-select">
                       <option value="">--- Pilih Kelas ---</option>
                       <?php
                       global $koneksi;
@@ -121,7 +122,7 @@ foreach ($data_siswa as $key) :
                       ?>
                         <option value="<?= $kelas['nama_kelas'] ?>" <?= $kelas['nama_kelas'] == $key['kelas'] ? 'selected' : ''; ?> ?><?= $kelas['nama_kelas']; ?></option>
                       <?php endforeach; ?>
-                    </select>
+                    </select> -->
                   </div>
                 </div>
                 <div class="row mb-3">

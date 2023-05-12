@@ -130,13 +130,15 @@ foreach (summon_admin() as $adm) :
               <div class="row mb-3">
                 <label for="nama" class="col-sm-3 col-form-label">Nama</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama">
+                  <input type="text" class="form-control" name="nama" id="nama" placeholder="Masukkan Nama" autocomplete="off">
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="kelas" class="col-sm-3 col-form-label">Kelas</label>
                 <div class="col-sm-9">
-                  <select name="kelas" id="kelas" class="form-select">
+                  <input type="text" class="form-control" name="kelas" id="kelas" placeholder="Masukkan Kelas" autocomplete="off">
+                  <!-- <select name="kelas" id="kelas" class="form-select" required>
+                    <option value="">--- Pilih Kelas ---</option>
                     <?php
                     global $koneksi;
                     $sql = "SELECT * FROM tb_kelas";
@@ -145,19 +147,19 @@ foreach (summon_admin() as $adm) :
                     ?>
                       <option value="<?php echo $kelas['nama_kelas']; ?>"><?php echo $kelas['nama_kelas']; ?></option>
                     <?php endforeach; ?>
-                  </select>
+                  </select> -->
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="alamat" class="col-sm-3 col-form-label">Alamat</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Masukkan Alamat">
+                  <input type="text" class="form-control" name="alamat" id="alamat" placeholder="Masukkan Alamat" autocomplete="off">
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="notlp" class="col-sm-3 col-form-label">Nomor Telepon</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" name="notlp" id="notlp" placeholder="Masukkan Nomor Telepon">
+                  <input type="text" class="form-control" name="notlp" id="notlp" placeholder="Masukkan Nomor Telepon" autocomplete="off">
                 </div>
               </div>
             </div>
